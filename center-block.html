@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>*{ margin: 0;
+        padding: 0;
+        }   
+        h1{
+            background: #ffccbb ;
+            text-align: center;
+            margin: 0 0 20px 0 ;
+        }
+        h1::nth-child(2){
+            padding: 30px 0;
+        }
+        h1::nth-child(3)
+        {
+            height: 100px;
+            line-height: 100px;
+        }
+        h1::nth-child(4)
+        {
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        </style>
+        <!-- Nếu thẻ đề or block chỉ hiện thị duy nhất 1 dòng thì thiết lập line-height 0 -->
+    </head>
+    <body>
+        <h1>Đây là block-1 dòng</h1>
+        <h1>Đây là block-1 dòng</h1>
+        <h1>Đây là block-1 dòng</h1>
+        <h1>
+            Đây là block-1 dòng
+            <br>
+            Đây là block-1 dòng
+        </h1>
+    </body>
+</html>

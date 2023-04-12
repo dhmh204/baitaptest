@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>09-Đào Hoàng Minh Hằng</title>
+    </head>
+    <body>
+        <h1> Register for Miss Bakers Space Cadets</h1>
+        <form>
+            <fieldset>
+                <legend> Personal details</legend>
+                <label for="fname">First name:</label>
+                <br>
+                <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    value
+                    placeholder=" First name only"
+                >
+                <br>
+                <label for="lname">Last name:</label>
+                <br>
+                <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    value
+                    placeholder=" Last name only"
+                >
+                <br>
+                <label for="date">Date of Birth</label>
+                <br>
+                <input
+                    type="datetime"
+                    id="date"
+                    name="date"
+                    value
+                    placeholder=" mm/dd/yyyy"
+                >
+                <br>
+                <label for="mail"> Email:</label>
+                <br>
+                <input
+                    type="email"
+                    id="mail"
+                    name="mail"
+                    value
+                    placeholder="example@domain.com"
+                >
+                <br>
+                <label for="link"> URL:</label>
+                <br>
+                <input
+                    type="url"
+                    id="link"
+                    name="link"
+                    value
+                    placeholder="http://mysite.com"
+                >
+                <br>
+                <label for="phone">Telephone:</label>
+                <br>
+                <input
+                    type="number"
+                    id="phone"
+                    name="phone"
+                    value
+                    placeholder="Eg. +447000 000000"
+                >
+                <br>
+                <label for="size"> Shoesize</label>
+                <br>
+                <input
+                    type="number"
+                    id="size"
+                    name="size"
+                    value="40"
+                >
+                <br>
+                <label for="skill"> Fyling Skill level ( 1low ~ 100 high)</label>
+                <br>
+                <form oninput="x.value=parseInt(a.value)">
+                    <input
+                        type="range"
+                        id="a"
+                        name="a"
+                        value="50"
+                    >
+                    <br>
+                    <output name="x" for="a"></output>
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend>Billing address</legend>
+                <lable for="add">Address</lable>
+                <textarea name="message" rows="5" cols="20"></textarea>
+                <br>
+                <lable>Post code</lable>
+                <br>
+                <input type="text" id="code" name="code">
+                <br>
+                <lable for="country">Country</lable>
+                <br>
+                <input type="text" id="country" list="country">
+                <datalist id="country">
+                    <option value="Viet Nam">
+                        <option value="Japan">
+                            <option value="USA">
+                            </datalist>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Card details</legend>
+                            <fieldset>
+                                <legend>Card type</legend>
+                                <input
+                                    type="radio"
+                                    id="visa"
+                                    name="card"
+                                    value="VISA"
+                                >
+                                <label for="visa">VISA</label>
+                                <input
+                                    type="radio"
+                                    name="card"
+                                    id="mastercard"
+                                    value="Mastercard"
+                                >
+                                <label for="mastercard">Mastercard</label>
+                                <input
+                                    type="radio"
+                                    name="card"
+                                    id="amex"
+                                    value="AMEX"
+                                >
+                                <label for="amex">AMEX</label>
+                            </fieldset>
+                            <br>
+                            <label for="name">Name</label>
+                            <br>
+                            <input type="text" id="name" placeholder="Name as it appears on your">
+                            <br>
+                            <label for="card-num">Card number</label>
+                            <br>
+                            <input type="text" id="cardnumber">
+                            <br>
+                            <label for="s-code">Security code</label>
+                            <br>
+                            <input type="text" id="securitycode">
+                            <br>
+                            <label for="expirydate">Expiry Date</label>
+                            <br>
+                            <input type="month" id="expdate">
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <button type="submit">Place oder</button>
+                        </fieldset>
+                    </form>
+                </body>
+            </html>

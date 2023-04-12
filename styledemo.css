@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.center {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* gap: 0.7rem; */
+  /* khoảng cách giữa các thành phần */
+}
+strong,
+em,
+code {
+  color: red;
+}
+header,
+nav,
+main,
+aside,
+footer {
+  background-color: lightgrey;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  padding: 2rem;
+  margin: 0.7rem;
+}
+h1,
+nav,
+footer p {
+  text-align: center;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+nav ul {
+  list-style-type: none;
+}
+header {
+  align-self: flex-start;
+  width: 100%;
+}
+nav {
+  flex: 1 0 0;
+}
+main {
+  flex: 3 0 0;
+}
+aside {
+  flex: 2 0 0;
+}
+header,
+footer {
+  flex-basis: 100%;
+}
+nav,
+aside {
+  height: 605px;
+}
+p,
+blockquote,
+dt,
+dd {
+  text-align: justify;
+}
+@media (max-width: 700px) {
+  nav {
+    flex: 1 1 100%;
+  }
+  nav li {
+    display: inline;
+  }
+}
+/* khi nhỏ hơn 700px thì nav nằm 1 dòng (dành cho trên nhiều thiết bị nhỏ hơn  */
+@media (max-width: 500px) {
+  aside,
+  main {
+    flex: 1 1 100%;
+  }
+}

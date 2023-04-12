@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style> 
+        .box1, .box2{
+            background-color: darkgrey;
+            height:300px;
+            width: 300px;
+            border-radius: 50%;
+            float: left;
+            margin: 20px;
+        }
+        .box1{
+            position: relative; 
+        }
+        .box1 img{
+            position:absolute; 
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%, -50%);
+            cursor:pointer;
+        }
+        .box2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 150%;
+            color: red;
+            font-weight: 800;
+        }
+        .box1 img:hover{
+            content: url(./folder2.png);
+        }
+        </style>
+    </head>
+    <body>
+        <div class="box box1">
+            <img src="./folder1.png">
+        </div>
+        <div class="box box2">
+            <p>Lorem ipusum dolor sit amet, consectetur adipisicing elit. Non, quod.</p>
+        </div>
+    </body>
+</html>

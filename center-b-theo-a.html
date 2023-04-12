@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>*{ margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }   
+        h1{
+            background: #ffccbb ;
+            text-align: center;
+        }
+        .box{
+            width: 500px; 
+            height: 300px;
+            border: 5px solid red;
+            float: left;
+            margin: 0 50px 50px 0;
+        }
+        /* .box1, .box3,  .box3 h1{
+            display: flex; 
+            align-items: center;
+            justify-content: center; */
+        }
+        .box2{
+            position: relative;
+        }
+        .box2 h1{
+            width: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* cách 2 */
+        }
+        .box3 h1{
+            height: 200px;
+            width: 400px;
+            }
+    
+        /* display áp dụng cho hộp chứa nó  */
+        </style>
+    </head>
+    <body>
+        <div class="box box1">
+            <h1> Đây là block 1 dòng</h1>
+        </div>
+        <div class="box box2">
+            <h1> Đây là block 1 dòng</h1>
+        </div>
+        <div class="box box3">
+            <h1>
+                Đây là block nhiều dòng
+                <br>
+                Đây là block nhiều dòng
+            </h1>
+        </div>
+    </body>
+</html>

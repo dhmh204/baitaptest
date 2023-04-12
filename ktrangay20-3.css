@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 800px;
+  height: 470px;
+}
+section {
+  border: 2px solid black;
+  border-bottom: none;
+}
+.main {
+  border-bottom: 2px solid black;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  display: inline-block;
+  width: 24.6%;
+  height: 50px;
+  border-right: 2px solid black;
+}
+.lienhe {
+  border-right: none;
+}
+li:hover {
+  background-color: yellow;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+img,
+p,
+div {
+  float: left;
+}
+.ads {
+  position: relative;
+}
+.ads img {
+  position: absolute;
+  width: 800px;
+  height: 100px;
+}
+.ads a {
+  text-align: center;
+  background-color: aqua;
+}
