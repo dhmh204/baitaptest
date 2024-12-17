@@ -12,6 +12,7 @@ body {
 .container {
   width: 960px;
   margin: 0 auto;
+  height: 90px;
 }
 ul {
   width: 100%;
@@ -20,6 +21,7 @@ ul {
   list-style: none;
   display: inline-block;
   height: 30px;
+  height: 90px;
 }
 .date,
 nav a {
